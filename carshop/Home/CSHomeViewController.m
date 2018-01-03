@@ -10,6 +10,7 @@
 #import "CSHomeTimeLineViewCell.h"
 #import "CSHomeTimeLineModel.h"
 #import "TSShareHelper.h"
+#import "CSEditTimeLineViewController.h"
 static NSString * const kCSHomeTimeLineViewCellIdentifier = @"CSHomeTimeLineViewCell";
 @interface CSHomeViewController ()<UITableViewDelegate,UITableViewDataSource,CSHomeTimeLineDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -37,6 +38,11 @@ static NSString * const kCSHomeTimeLineViewCellIdentifier = @"CSHomeTimeLineView
         make.height.mas_equalTo(40);
         make.bottom.mas_equalTo(0);
     }];
+    [btn addTarget:self action:@selector(editTimeLineAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)editTimeLineAction:(UIButton *)sender {
+    CSEditTimeLineViewController *vc = [[CSEditTimeLineViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)registerTableView {
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];

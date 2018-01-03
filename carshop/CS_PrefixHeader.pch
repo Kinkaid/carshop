@@ -19,4 +19,5 @@
 #import "SystemUser.h"
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
+#import "LJKHelper.h"
 #endif /* CS_PrefixHeader_pch */

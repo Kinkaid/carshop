@@ -21,6 +21,10 @@
 		3063E3581FB2A36900E51462 /* CSTabBarSystemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3063E3561FB2A36900E51462 /* CSTabBarSystemController.xib */; };
 		3063E35B1FB2A3E400E51462 /* UIColor+CSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3063E35A1FB2A3E400E51462 /* UIColor+CSColor.m */; };
 		3063E35E1FB2A44B00E51462 /* CSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3063E35D1FB2A44B00E51462 /* CSBaseNavigationController.m */; };
+		3067648A1FFB290C0089756A /* CSEditTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306764881FFB290C0089756A /* CSEditTimeLineViewController.m */; };
+		3067648B1FFB290C0089756A /* CSEditTimeLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306764891FFB290C0089756A /* CSEditTimeLineViewController.xib */; };
+		3067648E1FFB4FF40089756A /* LJKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3067648C1FFB4FF30089756A /* LJKHelper.m */; };
+		306764911FFB61830089756A /* CSEditTimeLineViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306764901FFB61830089756A /* CSEditTimeLineViewCell.m */; };
 		307D0ED61FF2943A00A65B10 /* WSCContactsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 307D0ED51FF2943A00A65B10 /* WSCContactsViewCell.m */; };
 		30AB284E1FB2A14400BD65A6 /* CSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AB284C1FB2A14400BD65A6 /* CSHomeViewController.m */; };
 		30AB284F1FB2A14400BD65A6 /* CSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30AB284D1FB2A14400BD65A6 /* CSHomeViewController.xib */; };
@@ -103,6 +107,13 @@
 		3063E35A1FB2A3E400E51462 /* UIColor+CSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CSColor.m"; sourceTree = "<group>"; };
 		3063E35C1FB2A44B00E51462 /* CSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseNavigationController.h; sourceTree = "<group>"; };
 		3063E35D1FB2A44B00E51462 /* CSBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseNavigationController.m; sourceTree = "<group>"; };
+		306764871FFB290C0089756A /* CSEditTimeLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSEditTimeLineViewController.h; sourceTree = "<group>"; };
+		306764881FFB290C0089756A /* CSEditTimeLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSEditTimeLineViewController.m; sourceTree = "<group>"; };
+		306764891FFB290C0089756A /* CSEditTimeLineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSEditTimeLineViewController.xib; sourceTree = "<group>"; };
+		3067648C1FFB4FF30089756A /* LJKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJKHelper.m; sourceTree = "<group>"; };
+		3067648D1FFB4FF40089756A /* LJKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJKHelper.h; sourceTree = "<group>"; };
+		3067648F1FFB61830089756A /* CSEditTimeLineViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSEditTimeLineViewCell.h; sourceTree = "<group>"; };
+		306764901FFB61830089756A /* CSEditTimeLineViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSEditTimeLineViewCell.m; sourceTree = "<group>"; };
 		307D0ED41FF2943A00A65B10 /* WSCContactsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCContactsViewCell.h; sourceTree = "<group>"; };
 		307D0ED51FF2943A00A65B10 /* WSCContactsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCContactsViewCell.m; sourceTree = "<group>"; };
 		30AB284B1FB2A14400BD65A6 /* CSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeViewController.h; sourceTree = "<group>"; };
@@ -180,6 +191,9 @@
 				30AB284B1FB2A14400BD65A6 /* CSHomeViewController.h */,
 				30AB284C1FB2A14400BD65A6 /* CSHomeViewController.m */,
 				30AB284D1FB2A14400BD65A6 /* CSHomeViewController.xib */,
+				306764871FFB290C0089756A /* CSEditTimeLineViewController.h */,
+				306764881FFB290C0089756A /* CSEditTimeLineViewController.m */,
+				306764891FFB290C0089756A /* CSEditTimeLineViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -189,6 +203,8 @@
 			children = (
 				303510CA1FEA7C690068EC49 /* CSHomeTimeLineViewCell.h */,
 				303510C81FEA7C600068EC49 /* CSHomeTimeLineViewCell.m */,
+				3067648F1FFB61830089756A /* CSEditTimeLineViewCell.h */,
+				306764901FFB61830089756A /* CSEditTimeLineViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -401,6 +417,8 @@
 		30B7F9091FB29D1A00EF7C31 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3067648D1FFB4FF40089756A /* LJKHelper.h */,
+				3067648C1FFB4FF30089756A /* LJKHelper.m */,
 				303DD65B1FF509470008C8FD /* TSShareHelper.h */,
 				303DD65C1FF509490008C8FD /* TSShareHelper.m */,
 				30C6029D1FCBA7C500177D64 /* WDApplicationUtil.h */,
@@ -579,6 +597,7 @@
 				30B7F8141FB1919500EF7C31 /* Assets.xcassets in Resources */,
 				30B7F8121FB1919500EF7C31 /* Main.storyboard in Resources */,
 				3063E34B1FB2A17F00E51462 /* CSPlatformViewController.xib in Resources */,
+				3067648B1FFB290C0089756A /* CSEditTimeLineViewController.xib in Resources */,
 				3063E3501FB2A18B00E51462 /* CSMineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +683,7 @@
 				30C602931FCBA69800177D64 /* HttpManager.m in Sources */,
 				30C602941FCBA69800177D64 /* HttpResponse.m in Sources */,
 				303510CB1FEA7C690068EC49 /* CSHomeTimeLineViewCell.m in Sources */,
+				306764911FFB61830089756A /* CSEditTimeLineViewCell.m in Sources */,
 				30B7F9951FB2A02B00EF7C31 /* CSBaseViewController.m in Sources */,
 				3063E35B1FB2A3E400E51462 /* UIColor+CSColor.m in Sources */,
 				30B7F80C1FB1919500EF7C31 /* AppDelegate.m in Sources */,
@@ -674,6 +694,8 @@
 				30B7F8091FB1919500EF7C31 /* main.m in Sources */,
 				3063E3451FB2A16B00E51462 /* CSContactViewController.m in Sources */,
 				3063E3571FB2A36900E51462 /* CSTabBarSystemController.m in Sources */,
+				3067648A1FFB290C0089756A /* CSEditTimeLineViewController.m in Sources */,
+				3067648E1FFB4FF40089756A /* LJKHelper.m in Sources */,
 				30C602951FCBA69800177D64 /* Md5Encrypt.m in Sources */,
 				3063E34F1FB2A18B00E51462 /* CSMineViewController.m in Sources */,
 			);
